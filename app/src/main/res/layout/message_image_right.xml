@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_name"
+        app:layout_constraintRight_toRightOf="@id/image_message_bubble_right"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/message_name"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_share_right"
+        android:layout_margin="10dp"
+        android:id="@+id/image_message_bubble_right"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_date"
+        app:layout_constraintRight_toRightOf="@id/image_message_bubble_right"
+        app:layout_constraintTop_toBottomOf="@id/image_message_bubble_right"
+        android:layout_marginTop="2dp"
+        android:textStyle="italic"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IOR</string>
+    <string name="media_picker_select_from">Выберите источник</string>
+    <string name="media_picker_camera">Камера</string>
+    <string name="media_picker_gallery">Галлерея</string>
+    <string name="media_picker_ok">ОК</string>
+    <string name="media_picker_cancel">Отменить</string>
+    <string name="media_picker_some_permission_is_denied">Нет разрешения</string>
+    <string name="media_picker_you_need_to_grant_access_to">Предоставьте доступ</string>
+    <string name="media_picker_read_Write_external_storage"><![CDATA[Read & Write External Storage]]></string>
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/green"
+        android:alpha="0.3"
+        android:id="@+id/new_overlay_details"
+        />
+
+    <ImageButton
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/star"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fav_button_details"
+        />
+
+    <TextView
+        android:text="Номер"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_list_item_number_details"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:text="Лейбл"
+        android:textSize="18sp"
+        android:textAlignment="viewEnd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="45dp"
+        android:gravity="end"
+        android:id="@+id/order_list_item_number_details"/>
+
+    <TextView
+        android:text="Создан"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_list_item_created_details"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:text="Лейбл"
+        android:textSize="18sp"
+        android:textAlignment="viewEnd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_list_item_number_details"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:id="@+id/order_list_item_created_details"/>
+
+    <TextView
+        android:text="Обновлен"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_list_item_updated_details"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:text="Лейбл"
+        android:textSize="18sp"
+        android:textAlignment="viewEnd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_list_item_created_details"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:id="@+id/order_list_item_updated_details"/>
+
+    <TextView
+        android:text="Тип"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_list_item_type_details"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:text="Лейбл"
+        android:textSize="18sp"
+        android:textAlignment="viewEnd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_list_item_updated_details"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:id="@+id/order_list_item_type_details"/>
+
+    <TextView
+        android:text="Пользователь"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_list_item_user_details"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:text="Лейбл"
+        android:textSize="18sp"
+        android:textAlignment="viewEnd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_list_item_type_details"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:id="@+id/order_list_item_user_details"/>
+
+    <TextView
+        android:text="Статус"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_list_item_status_details"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:text="текст статуса"
+        android:textSize="18sp"
+        android:textAlignment="viewEnd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_list_item_user_details"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:id="@+id/order_list_item_status_details"
+        />
+
+    <TextView
+        android:text="Комментарий"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_list_item_comment_details"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/order_list_item_comment_details_label"
+        />
+
+    <TextView
+        android:text="Лейбл"
+        android:textSize="18sp"
+        android:textAlignment="viewEnd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_list_item_status_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="end"
+        android:id="@+id/order_list_item_comment_details"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/dark_gray"
+        app:layout_constraintTop_toBottomOf="@id/order_list_item_status"/>
+
+</android.support.constraint.ConstraintLayout>
