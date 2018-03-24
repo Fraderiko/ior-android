@@ -133,6 +133,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/order_list_item_user"
         android:layout_marginLeft="20dp"
+        android:id="@+id/order_user_type"
         />
 
     <TextView

@@ -18,7 +18,10 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.security.SecureRandom;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import okhttp3.MediaType;
@@ -123,10 +126,10 @@ public class CreateOrderScreen extends AppCompatActivity implements AdapterView.
 
     void sendOrder() {
 
-        if (order_number.getText().toString().equals("")) {
-            showErrorAlert("Укажите номер!");
-            return;
-        }
+//        if (order_number.getText().toString().equals("")) {
+//            showErrorAlert("Укажите номер!");
+//            return;
+//        }
 
         if (userSelected == false) {
             if (Settings.getInstance().getType().equals("client")) {
@@ -157,7 +160,8 @@ public class CreateOrderScreen extends AppCompatActivity implements AdapterView.
 
                     NewOrder order = new NewOrder();
 
-                    order.setNumber(order_number.getText().toString() + '-' + randomString(5));
+                    order.setNumber(getNumber());
+
                     order.setDate(System.currentTimeMillis());
                     order.setUpdated(System.currentTimeMillis());
                     order.setType(selectedOrderTemplate.get_id());
@@ -226,6 +230,17 @@ public class CreateOrderScreen extends AppCompatActivity implements AdapterView.
         });
     }
 
+    private String getNumber() {
+
+        if (order_number.getText().toString().equals("")) {
+            DateFormat formatter = new SimpleDateFormat("ddMM");
+            String today = formatter.format(new Date());
+            return today + '-' + randomString(5);
+        } else {
+            return order_number.getText().toString() + '-' + randomString(5);
+        }
+
+    }
 
 
     static final String AB = "0123456789abcdefghijklmnopqrstuvwxyz";

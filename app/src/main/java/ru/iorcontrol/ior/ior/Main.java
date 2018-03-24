@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import ru.iorcontrol.ior.ior.Login.LoginScreen;
+import ru.iorcontrol.ior.ior.OrderList.OrdersListScreen;
+import ru.iorcontrol.ior.ior.Recipient.RecipientScreen;
+
 /**
  * Created by me on 23/11/2017.
  */

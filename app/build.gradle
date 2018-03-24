@@ -13,10 +13,10 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "ru.iorcontrol.ior.ior"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
-        versionCode 8
-        versionName "1.7"
+        versionCode 14
+        versionName "2.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         manifestPlaceholders = [onesignal_app_id: "50f12693-ffef-48b7-ba86-0e38607dbe31",
@@ -63,7 +63,4 @@ dependencies {
     implementation("com.mikepenz:materialdrawer:6.0.2@aar") {
         transitive = true
     }
-
-
-
 }

@@ -18,11 +18,12 @@ public class User {
     public Boolean new_status_notification;
     public Boolean new_orders_push_notification;
     public Boolean new_status_push_notification;
+    public boolean new_chat_notification;
     public Boolean permission_to_edit_orders;
     public Boolean permission_to_cancel_orders;
     public List<String> favorites;
 
-    public User(String _id, String type, String name, String mail, String phone, String password, Boolean new_orders_notification, Boolean new_status_notification, Boolean new_orders_push_notification, Boolean new_status_push_notification, Boolean permission_to_cancel_orders, Boolean permission_to_edit_orders, List<String> favorites) {
+    public User(String _id, String type, String name, String mail, String phone, String password, Boolean new_orders_notification, Boolean new_status_notification, Boolean new_orders_push_notification, Boolean new_status_push_notification, Boolean permission_to_cancel_orders, Boolean permission_to_edit_orders, List<String> favorites, Boolean new_chat_notification) {
         this._id = _id;
         this.type = type;
         this.name = name;
@@ -36,6 +37,7 @@ public class User {
         this.permission_to_cancel_orders = permission_to_cancel_orders;
         this.favorites = favorites;
         this.permission_to_edit_orders = permission_to_edit_orders;
+        this.new_chat_notification = new_chat_notification;
     }
 
     public Boolean getPermission_to_edit_orders() {

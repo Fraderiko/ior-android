@@ -2,8 +2,6 @@ package ru.iorcontrol.ior.ior.Model;
 
 import java.util.List;
 
-import ru.iorcontrol.ior.ior.StatusTemplate;
-
 /**
  * Created by alexeykazinets on 30/11/2017.
  */

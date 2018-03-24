@@ -19,6 +19,7 @@ import ru.iorcontrol.ior.ior.Model.NewOrder;
 import ru.iorcontrol.ior.ior.Model.Order;
 import ru.iorcontrol.ior.ior.Model.OrderTemplate;
 import ru.iorcontrol.ior.ior.Model.ResultResponse;
+import ru.iorcontrol.ior.ior.Model.Upload;
 import ru.iorcontrol.ior.ior.Model.User;
 
 /**

@@ -37,13 +37,13 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import ru.iorcontrol.ior.ior.APIService;
-import ru.iorcontrol.ior.ior.ImageGalleryScreen;
+import ru.iorcontrol.ior.ior.ImageGallery.ImageGalleryScreen;
 import ru.iorcontrol.ior.ior.Model.ChatMessage;
 import ru.iorcontrol.ior.ior.Model.Order;
 import ru.iorcontrol.ior.ior.R;
 import ru.iorcontrol.ior.ior.Settings;
-import ru.iorcontrol.ior.ior.Upload;
-import ru.iorcontrol.ior.ior.VideoPlayer;
+import ru.iorcontrol.ior.ior.Model.Upload;
+import ru.iorcontrol.ior.ior.VideoPlayer.VideoPlayer;
 
 /**
  * Created by alexeykazinets on 25/01/2018.

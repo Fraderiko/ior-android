@@ -63,11 +63,29 @@
         />
 
     <TextView
+        android:text="Присылать почтовые уведомления о сообщениях в чате"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/third_label"
+        app:layout_constraintTop_toBottomOf="@+id/profile_phone"
+        app:layout_constraintLeft_toLeftOf="@+id/profile_mail"
+        android:layout_marginLeft="5dp"
+        />
+
+    <Switch
+        android:id="@+id/third_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/third_label"
+        app:layout_constraintTop_toTopOf="@+id/third_label"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
         android:text="Присылать почтовые уведомления о новых заказах"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="@+id/profile_mail"
-        app:layout_constraintTop_toBottomOf="@+id/profile_phone"
+        app:layout_constraintTop_toBottomOf="@+id/third_label"
         android:id="@+id/first_label"
         android:layout_marginLeft="5dp"
 
